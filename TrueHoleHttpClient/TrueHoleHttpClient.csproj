@@ -9,6 +9,8 @@
     <Authors>CAM &amp; Controls</Authors>
     <PackageProjectUrl>https://developer.hypertherm.com</PackageProjectUrl>
     <Copyright>Copyright (c) 2018 Hypertherm, Inc.</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/Hypertherm/true-hole-client-net/master/LICENSE.txt</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/Hypertherm/true-hole-client-net</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
