@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Hypertherm.TrueHoleHttpClient</RootNamespace>
+    <Company>Hypertherm, Inc.</Company>
+    <Description>Http client for accessing the XPR True Hole conversion API.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>CAM &amp; Controls</Authors>
+    <PackageProjectUrl>https://developer.hypertherm.com</PackageProjectUrl>
+    <Copyright>Copyright (c) 2018 Hypertherm, Inc.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
