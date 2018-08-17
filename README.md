@@ -5,7 +5,7 @@ Use this sample HttpClient C# code on your CNC to allow operators to quickly con
 -------------
 
 ### Get an API key
-Before you can use the XPR True Hole Conversion API, you need a verified Hypertherm API developer portal account and an API subscription key. [See instructions](https://hyperthermapidev.portal.azure-api.net/get-api-key).
+Before you can use the XPR True Hole Conversion API, you need a verified Hypertherm API developer portal account and an API subscription key. [See instructions](https://developer.hypertherm.com/get-api-key).
 
 ### Download package
 Download the NuGet package.
