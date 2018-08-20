@@ -6,11 +6,14 @@
     <Company>Hypertherm, Inc.</Company>
     <Description>Http client for accessing the XPR True Hole conversion API.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>CAM &amp; Controls</Authors>
+    <Authors>Hypertherm</Authors>
     <PackageProjectUrl>https://developer.hypertherm.com</PackageProjectUrl>
     <Copyright>Copyright (c) 2018 Hypertherm, Inc.</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/Hypertherm/true-hole-client-net/master/LICENSE.txt</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/Hypertherm/true-hole-client-net</RepositoryUrl>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
