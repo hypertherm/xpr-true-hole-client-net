@@ -1,6 +1,6 @@
 # XPR True Hole Conversion API
 
-Use this True Hole Client for .NET in your CNC application to allow operators to quickly convert eligible holes in XPR parts into bolt-ready holes.
+Use this True Hole client for .NET in your CNC application to allow operators to quickly convert eligible holes in XPR parts into bolt-ready holes.
 
 This client library uses the XPR True Hole Conversion API available at https://developer.hypertherm.com 
 
@@ -10,7 +10,7 @@ This client library uses the XPR True Hole Conversion API available at https://d
 Before you can use the XPR True Hole Conversion API, you need a verified Hypertherm API developer portal account and an API subscription key. [See instructions](https://developer.hypertherm.com/get-api-key).
 
 ### Install the package
-Install the TrueHoleHttpClient [NuGet package](https://www.nuget.org/packages/TrueHoleHttpClient/) using NuGet Package Manager Console:
+**Install the [NuGet package](https://www.nuget.org/packages/TrueHoleHttpClient/)** using NuGet Package Manager Console:
 ```
 PM> Install-Package TrueHoleHttpClient
 ```
