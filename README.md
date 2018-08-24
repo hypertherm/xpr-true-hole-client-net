@@ -10,19 +10,17 @@ This client library uses the XPR True Hole Conversion API available at https://d
 Before you can use the XPR True Hole Conversion API, you need a verified Hypertherm API developer portal account and an API subscription key. [See instructions](https://developer.hypertherm.com/get-api-key).
 
 ### Install the package
-Install the TrueHoleHttpClient [NuGet package](https://www.nuget.org/packages/TrueHoleHttpClient/).
-
-Using NuGet Package Manager Console:
+Install the TrueHoleHttpClient [NuGet package](https://www.nuget.org/packages/TrueHoleHttpClient/) using NuGet Package Manager Console:
 ```
 PM> Install-Package TrueHoleHttpClient
 ```
 
-or using the .NET Core tools:
+_**OR**_ using the .NET Core tools:
 ```
 > dotnet add package TrueHoleHttpClient
 ```
 
-or search for *TrueHoleHttpClient* in your IDE's NuGet package manager.
+_**OR**_ search for *TrueHoleHttpClient* in your IDE's NuGet package manager.
 
 ### Basic use
 ```
