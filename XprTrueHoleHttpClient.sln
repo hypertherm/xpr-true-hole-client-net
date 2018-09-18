@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueHoleHttpClient.unittests", "TrueHoleHttpClient.unittests\TrueHoleHttpClient.unittests.csproj", "{8D91AC0D-F14F-4083-B1AD-584FBB6533E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XprTrueHoleHttpClient.unittests", "XprTrueHoleHttpClient.unittests\XprTrueHoleHttpClient.unittests.csproj", "{8D91AC0D-F14F-4083-B1AD-584FBB6533E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueHoleHttpClient", "TrueHoleHttpClient\TrueHoleHttpClient.csproj", "{9B6772D9-7096-4D50-9E30-D28853D70408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XprTrueHoleHttpClient", "XprTrueHoleHttpClient\XprTrueHoleHttpClient.csproj", "{9B6772D9-7096-4D50-9E30-D28853D70408}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

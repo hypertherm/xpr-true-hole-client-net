@@ -1,4 +1,4 @@
-﻿namespace Hypertherm.TrueHoleHttpClient
+﻿namespace Hypertherm.XprTrueHoleHttpClient
 {
     /// <summary>
     /// Class for passing configuration data.

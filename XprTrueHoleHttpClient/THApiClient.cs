@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace Hypertherm.TrueHoleHttpClient
+namespace Hypertherm.XprTrueHoleHttpClient
 {
     /// <summary>
     /// Exception for XPR True Hole client errors.

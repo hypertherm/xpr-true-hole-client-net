@@ -1,4 +1,4 @@
-﻿namespace Hypertherm.TrueHoleHttpClient
+﻿namespace Hypertherm.XprTrueHoleHttpClient
 {
     /// <summary>
     /// Interface for calling individual endpoints on the XPR True Hole API.

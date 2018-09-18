@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Hypertherm.TrueHoleHttpClient</RootNamespace>
+    <RootNamespace>Hypertherm.XprTrueHoleHttpClient</RootNamespace>
     <Company>Hypertherm, Inc.</Company>
     <Description>Http client for accessing the XPR True Hole conversion API.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

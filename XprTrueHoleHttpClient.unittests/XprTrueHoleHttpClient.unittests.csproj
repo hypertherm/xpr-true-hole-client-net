@@ -76,9 +76,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TrueHoleHttpClient\TrueHoleHttpClient.csproj">
+    <ProjectReference Include="..\XprTrueHoleHttpClient\XprTrueHoleHttpClient.csproj">
       <Project>{9b6772d9-7096-4d50-9e30-d28853d70408}</Project>
-      <Name>TrueHoleHttpClientST</Name>
+      <Name>XprTrueHoleHttpClient</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,9 +1,9 @@
-﻿namespace Hypertherm.TrueHoleHttpClient
+﻿namespace Hypertherm.XprTrueHoleHttpClient
 {
     /// <summary>
     /// Class for converting a non-True Hole XPR part into a True Hole XPR part.
     /// </summary>
-    public class TrueHoleClient
+    public class XprTrueHoleClient
     {
         private ITHApiClient client;
 
@@ -11,7 +11,7 @@
         /// Minimal constructor, only requires a subscription key.
         /// </summary>
         /// <param name="subscriptionKey">XPR True Hole API subscription key</param>
-        public TrueHoleClient(string subscriptionKey)
+        public XprTrueHoleClient(string subscriptionKey)
             : this(new THClientConfiguration(subscriptionKey)) { }
 
         /// <summary>
@@ -19,7 +19,7 @@
         /// </summary>
         /// <param name="subscriptionKey">XPR True Hole API subscription key</param>
         /// <param name="baseUri">Base URL for the XPR True Hole API</param>
-        public TrueHoleClient(string subscriptionKey, string baseUri)
+        public XprTrueHoleClient(string subscriptionKey, string baseUri)
             : this(new THClientConfiguration(subscriptionKey, baseUri)) { }
 
         /// <summary>
@@ -28,21 +28,21 @@
         /// <param name="subscriptionKey">XPR True Hole API subscription key</param>
         /// <param name="baseUri">Base URL for the XPR True Hole API</param>
         /// <param name="subscriptionHeader">Header name for passing the subscription key</param>
-        public TrueHoleClient(string subscriptionKey, string baseUri, string subscriptionHeader) 
+        public XprTrueHoleClient(string subscriptionKey, string baseUri, string subscriptionHeader) 
             : this(new THClientConfiguration(subscriptionKey, baseUri, subscriptionHeader)) { }
 
         /// <summary>
         /// Constructor, requires an ITHClientConfiguration object.
         /// </summary>
         /// <param name="thClientConfiguration">An ITHClientConfiguration object</param>
-        public TrueHoleClient(ITHClientConfiguration thClientConfiguration) 
+        public XprTrueHoleClient(ITHClientConfiguration thClientConfiguration) 
             : this(new THApiClient(thClientConfiguration)) { }
 
         /// <summary>
         /// Constructor, requires an ITHApiClient object.
         /// </summary>
         /// <param name="thApiClient">An ITHApiClient object</param>
-        public TrueHoleClient(ITHApiClient thApiClient)
+        public XprTrueHoleClient(ITHApiClient thApiClient)
         {
             client = thApiClient;
         }
