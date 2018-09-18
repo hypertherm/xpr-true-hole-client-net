@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace Hypertherm.TrueHoleHttpClient
+namespace Hypertherm.XprTrueHoleHttpClient
 {
     /// <summary>
     /// Exception for XPR True Hole client errors.
@@ -72,7 +72,7 @@ namespace Hypertherm.TrueHoleHttpClient
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(ApplicationJson));
 
             // Send upload HTTP request
-            HttpResponseMessage response = thHttpClient.PostText("api/upload", content, client);
+            HttpResponseMessage response = thHttpClient.PostText("upload", content, client);
 
             // Handle json response
             if (response.Content.Headers?.ContentType?.MediaType == ApplicationJson)
@@ -111,7 +111,7 @@ namespace Hypertherm.TrueHoleHttpClient
             });
 
             // Send convert HTTP request
-            HttpResponseMessage response = thHttpClient.PostJson("api/convert", content, client);
+            HttpResponseMessage response = thHttpClient.PostJson("convert", content, client);
 
             // Handle json response
             if (response.Content.Headers?.ContentType?.MediaType == ApplicationJson)
@@ -148,7 +148,7 @@ namespace Hypertherm.TrueHoleHttpClient
             });
 
             // Send download HTTP request
-            HttpResponseMessage response = thHttpClient.PostJson("api/download", content, client);
+            HttpResponseMessage response = thHttpClient.PostJson("download", content, client);
 
             var contentType = response.Content.Headers?.ContentType?.MediaType;
 
