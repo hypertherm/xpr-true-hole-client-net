@@ -4,7 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Hypertherm.XprTrueHoleHttpClient</RootNamespace>
     <Company>Hypertherm, Inc.</Company>
-    <Description>Http client for accessing the XPR True Hole conversion API.</Description>
+    <Description>Http client for accessing the XPR True Hole conversion API.
+    
+Before you can use this API, you need a Hypertherm Developer Portal account and a key.
+    
+Sign up at https://developer.hypertherm.com</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Hypertherm</Authors>
     <PackageProjectUrl>https://developer.hypertherm.com</PackageProjectUrl>
