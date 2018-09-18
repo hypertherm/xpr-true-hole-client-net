@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Hypertherm.XprTrueHoleHttpClient.unittests
 {
     [TestFixture]
-    public class TestTrueHoleClient
+    public class TestXprTrueHoleClient
     {
         XprTrueHoleClient thClient;
         string settings;

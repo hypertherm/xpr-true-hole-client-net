@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestTHApiClient.cs" />
-    <Compile Include="TestTrueHoleClient.cs" />
+    <Compile Include="TestXprTrueHoleClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
