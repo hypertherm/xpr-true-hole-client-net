@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 
-namespace Hypertherm.TrueHoleHttpClient.unittests
+namespace Hypertherm.XprTrueHoleHttpClient.unittests
 {
     [TestFixture]
     public class TestTHApiClient
@@ -30,7 +30,7 @@ namespace Hypertherm.TrueHoleHttpClient.unittests
             HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.OK);
             response.Content = new StringContent("");
 
-            thHttpClientMock.Setup(thcm => thcm.PostText("api/upload", uploadbadfile, It.IsAny<HttpClient>())).Returns(response);
+            thHttpClientMock.Setup(thcm => thcm.PostText("upload", uploadbadfile, It.IsAny<HttpClient>())).Returns(response);
 
             string message = null;
 
@@ -54,7 +54,7 @@ namespace Hypertherm.TrueHoleHttpClient.unittests
             string errorMessageJson = $"{{'errorMsg': '{errorMessage}'}}";
             response.Content = new StringContent(errorMessageJson, Encoding.UTF8, "application/json");
 
-            thHttpClientMock.Setup(thcm => thcm.PostText("api/upload", uploadbadfile, It.IsAny<HttpClient>())).Returns(response);
+            thHttpClientMock.Setup(thcm => thcm.PostText("upload", uploadbadfile, It.IsAny<HttpClient>())).Returns(response);
 
             string message = null;
 
@@ -78,7 +78,7 @@ namespace Hypertherm.TrueHoleHttpClient.unittests
             string fileIDJson = $"{{'fileID': '{fileID}'}}";
             response.Content = new StringContent(fileIDJson, Encoding.UTF8, "application/json");
 
-            thHttpClientMock.Setup(thcm => thcm.PostText("api/upload", uploadgoodfile, It.IsAny<HttpClient>())).Returns(response);
+            thHttpClientMock.Setup(thcm => thcm.PostText("upload", uploadgoodfile, It.IsAny<HttpClient>())).Returns(response);
 
             var responseFileID = thAPiClient.Upload(uploadgoodfile);
             Assert.AreEqual(fileID, responseFileID);
@@ -96,12 +96,12 @@ namespace Hypertherm.TrueHoleHttpClient.unittests
             string fileIDJson = $"{{'convertedPartFileID': '{fileID}'}}";
             response.Content = new StringContent(fileIDJson, Encoding.UTF8, "application/json");
 
-            thHttpClientMock.Setup(thcm => thcm.PostJson("api/convert", It.IsAny<string>(),
+            thHttpClientMock.Setup(thcm => thcm.PostJson("convert", It.IsAny<string>(),
                 It.IsAny<HttpClient>())).Returns(response);
 
             var responseFileID = thAPiClient.Convert(settings, part);
 
-            thHttpClientMock.Verify(thcm => thcm.PostJson("api/convert", convertJson, It.IsAny<HttpClient>()), Times.Once);
+            thHttpClientMock.Verify(thcm => thcm.PostJson("convert", convertJson, It.IsAny<HttpClient>()), Times.Once);
             Assert.AreEqual(fileID, responseFileID);
         }
 
@@ -115,12 +115,12 @@ namespace Hypertherm.TrueHoleHttpClient.unittests
             string convertedFileContent = "converted part file";
             response.Content = new StringContent(convertedFileContent);
 
-            thHttpClientMock.Setup(thcm => thcm.PostJson("api/download", It.IsAny<string>(),
+            thHttpClientMock.Setup(thcm => thcm.PostJson("download", It.IsAny<string>(),
                 It.IsAny<HttpClient>())).Returns(response);
 
             var responseContent = thAPiClient.Download(convertedFileID);
 
-            thHttpClientMock.Verify(thcm => thcm.PostJson("api/download", downloadJson, It.IsAny<HttpClient>()), Times.Once);
+            thHttpClientMock.Verify(thcm => thcm.PostJson("download", downloadJson, It.IsAny<HttpClient>()), Times.Once);
             Assert.AreEqual(convertedFileContent, responseContent);
         }
     }

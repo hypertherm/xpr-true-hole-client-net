@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 
-namespace Hypertherm.TrueHoleHttpClient
+namespace Hypertherm.XprTrueHoleHttpClient
 {
     /// <summary>
     /// Interface for sending HTTP requests.

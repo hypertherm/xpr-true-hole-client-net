@@ -11,6 +11,6 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TrueHoleHttpClient\TrueHoleHttpClient.csproj" />
+    <ProjectReference Include="..\XprTrueHoleHttpClient\XprTrueHoleHttpClient.csproj" />
   </ItemGroup>
 </Project>

@@ -1,29 +1,41 @@
 # XPR True Hole Conversion API
 
-Use this sample HttpClient C# code on your CNC to allow operators to quickly convert eligible holes in XPR parts into bolt-ready holes.
+Use this Xpr True Hole client for .NET in your CNC application to allow operators to quickly convert eligible holes in XPR parts into bolt-ready holes.
 
-This library uses the XPR True Hole Conversion API available at https://developer.hypertherm.com 
+This client library uses the XPR True Hole Conversion API at **https://developer.hypertherm.com** 
 
 -------------
 
-### Get an API key
-Before you can use the XPR True Hole Conversion API, you need a verified Hypertherm API developer portal account and an API subscription key. [See instructions](https://developer.hypertherm.com/get-api-key).
+### [Get an API key](https://developer.hypertherm.com/get-api-key)
+Before you can use this API, you need a Hypertherm Developer Portal account and a key.
 
-### Download package
-Download the TrueHoleHttpClient [NuGet package](https://www.nuget.org/packages/TrueHoleHttpClient/).
+
+### [Install the NuGet package](https://www.nuget.org/packages/XprTrueHoleHttpClient/)
+Using NuGet Package Manager Console:
+```
+PM> Install-Package XprTrueHoleHttpClient
+```
+
+_**OR**_ using the .NET Core tools:
+```
+> dotnet add package XprTrueHoleHttpClient
+```
+
+_**OR**_ search for *XprTrueHoleHttpClient* in your IDE's NuGet package manager.
+
 
 ### Basic use
 ```
-using Hypertherm.TrueHoleHttpClient;
+using Hypertherm.XprTrueHoleHttpClient;
 
-// Create an instance of TrueHoleClient
-TrueHoleClient client = new TrueHoleClient("<My Subscription Key>");
+// Create an instance of XprTrueHoleClient
+XprTrueHoleClient client = new XprTrueHoleClient("<My Subscription Key>");
 
 // Convert a non-True Hole XPR part into a True Hole XPR part
 String trueHolePart = client.Convert("<My Settings String>", "<My XPR Part String>");
 ```
 
-See the [Hypertherm Developer Portal](https://developer.hypertherm.com) for more details.
+See the **[Hypertherm Developer Portal](https://developer.hypertherm.com)** for more details.
 
 
 

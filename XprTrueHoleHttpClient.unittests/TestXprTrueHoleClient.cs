@@ -1,12 +1,12 @@
 ﻿using Moq;
 using NUnit.Framework;
 
-namespace Hypertherm.TrueHoleHttpClient.unittests
+namespace Hypertherm.XprTrueHoleHttpClient.unittests
 {
     [TestFixture]
-    public class TestTrueHoleClient
+    public class TestXprTrueHoleClient
     {
-        TrueHoleClient thClient;
+        XprTrueHoleClient thClient;
         string settings;
         string part;
         string output;
@@ -19,7 +19,7 @@ namespace Hypertherm.TrueHoleHttpClient.unittests
         protected void Setup()
         {
             httpClientMock = new Mock<ITHApiClient>();
-            thClient = new TrueHoleClient(httpClientMock.Object);
+            thClient = new XprTrueHoleClient(httpClientMock.Object);
             settings = "settings content";
             part = "part content";
             output = "output content";

@@ -1,4 +1,4 @@
-﻿namespace Hypertherm.TrueHoleHttpClient
+﻿namespace Hypertherm.XprTrueHoleHttpClient
 {
     /// <summary>
     /// Class for passing configuration data.
@@ -40,7 +40,7 @@
             // Use default base URI
             if (string.IsNullOrEmpty(BaseUri))
             {
-                _BaseUri = "https://api.hypertherm.com/convert/";
+                _BaseUri = "https://api.hypertherm.com/xpr-true-hole-conversion/";
             }
 
             _SubscriptionHeader = subscriptionHeader;
