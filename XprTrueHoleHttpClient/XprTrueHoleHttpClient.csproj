@@ -9,8 +9,8 @@
     <Authors>Hypertherm</Authors>
     <PackageProjectUrl>https://developer.hypertherm.com</PackageProjectUrl>
     <Copyright>Copyright (c) 2018 Hypertherm, Inc.</Copyright>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/Hypertherm/true-hole-client-net/master/LICENSE.txt</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/Hypertherm/true-hole-client-net</RepositoryUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/Hypertherm/xpr-true-hole-client-net/master/LICENSE.txt</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/Hypertherm/xpr-true-hole-client-net</RepositoryUrl>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <FileVersion>2.0.0.0</FileVersion>
     <Version>2.0.0</Version>
