@@ -1,6 +1,6 @@
 # XPR True Hole Conversion API
 
-Use this Xpr True Hole client for .NET in your CNC application to allow operators to quickly convert eligible holes in XPR parts into bolt-ready holes.
+Use this XPR True Hole client for .NET in your CNC application to allow operators to quickly convert eligible holes in XPR parts into bolt-ready holes.
 
 This client library uses the XPR True Hole Conversion API at **https://developer.hypertherm.com** 
 
