@@ -25,6 +25,9 @@ _**OR**_ search for *XprTrueHoleHttpClient* in your IDE's NuGet package manager.
 
 
 ### Basic use
+The following examples use C#.
+
+#### Pass file content
 ```
 using Hypertherm.XprTrueHoleHttpClient;
 
@@ -34,7 +37,18 @@ XprTrueHoleClient client = new XprTrueHoleClient("<My Subscription Key>");
 // Convert a non-True Hole XPR part into a True Hole XPR part
 String trueHolePart = client.Convert("<My Settings String>", "<My XPR Part String>");
 ```
+_**OR**_ 
+#### Pass file path
+```
+using Hypertherm.XprTrueHoleHttpClient;
 
+// Create an instance of XprTrueHoleClient
+XprTrueHoleClient client = new XprTrueHoleClient("<My Subscription Key>");
+
+// Convert a non-True Hole XPR part into a True Hole XPR by passing part file paths
+String trueHolePart = client.Convert(File.ReadAllText("<My Settings File Path>"), File.ReadAllText("<My XPR Part File Path>"));
+```
+  
 See the **[Hypertherm Developer Portal](https://developer.hypertherm.com)** for more details.
 
 
